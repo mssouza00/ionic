@@ -8,11 +8,13 @@ import { DadosPessoais } from '../../providers/dados-pessoais';
   templateUrl: 'objetivos.html'
 })
 export class Objetivos {
+  conhecimentos;
 
-  constructor(public navCtrl: NavController,public dadosPessoais: DadosPessoais) {}
+  constructor(public navCtrl: NavController,public dadosPessoais: DadosPessoais) {
 
-  ionViewDidLoad() {
-    console.log('Hello Objetivos Page');
+
+    this.conhecimentos = this.dadosPessoais.getConhecimentos();
+
+
   }
-
 }

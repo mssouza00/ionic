@@ -5,17 +5,23 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Curriculo</h2>
+  <h1>Curriculo</h1>
   <ion-list>
   <ion-item>
-
+    <div class="list list-inset">
     <a class="item item-avatar" >
       <img src="/src/assets/img/Matheus.jpg">
+      
       <h2><strong>{{ nome }}</strong></h2>
-      <p> <strong> endereço:</strong> {{endereco}}</p>
-      <p> <strong>telefone</strong> {{telefone}}
+      
+      <p><ion-icon name="home"></ion-icon>
+       <strong> endereço:</strong> {{endereco}}</p>
+       
+      <p><strong>telefone</strong> {{telefone}}</p>
       
     </a>
+
+</div>
   </ion-item>
 </ion-list>
 

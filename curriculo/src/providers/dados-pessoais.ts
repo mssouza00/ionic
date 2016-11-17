@@ -12,12 +12,12 @@ import 'rxjs/add/operator/map';
 export class DadosPessoais {
 
 
-  
+    linguagem = "java , SQL, Ruby. "
     telefone = 11982060757
     nome = 'Matheus S Souza'
     endereco ='rua ariosto cesar 102'
     resumo = 'Estudando atualmente em busca de novas oportunidades para desenvolver e melhorar meu conhecimento visando um crescimento pessoal e profissional.'
-    empresa ='SKY brasil'
+    empresa ='SKY Brasil'
     cargo = 'Backoffice'
     descCargo = 'Departamentos que mantêm muito pouco contato com os cliente, mediador de negociações minimizando o impacto financeiro para empresa corrigindo problemas  dos clientes.'
     escolaridade = 'Superior cursando '
@@ -26,7 +26,12 @@ export class DadosPessoais {
 
 
   constructor(public http: Http) {
-    console.log('Hello DadosPessoais Provider');
+    
+  }
+  getConhecimentos(){
+
+    return this.linguagem;
+
   }
 
   getTelefone(){
